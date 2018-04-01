@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,11 +30,21 @@
     </div>
 </nav>
 
+<div class="landpage-content">
 
-<div class="login-container">
-    <h1>Finances</h1>
-    <button type="button" class="btn btn-outline-primary">View Demo</button>
-    <a href="{% url 'registration' %}"><button type="button" class="btn btn-outline-primary">Registration</button></a>
+    <div class="landpage-image">
+        <img src="{% static 'images/landpage.svg' %}">
+    </div>
+
+    <div class="login-container">
+        <h1>Boost productivity with Dropbox Business</h1>
+        <div class="line-break"></div>
+        <h4>The secure file sharing and storage solution that employees and IT admins trust.</h4>
+        <div class="line-break"></div>
+        <a href="{% url 'registration' %}"><button type="button" class="btn btn-registration">Registration</button></a>
+        <button type="button" class="btn btn-demo">View Demo</button>
+    </div>
+
 </div>
 
 

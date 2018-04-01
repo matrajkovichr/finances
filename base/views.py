@@ -8,7 +8,6 @@ def landpage(request):
 
 
 def registration(request):
-    us = request.user
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -20,4 +19,4 @@ def registration(request):
             return redirect('landpage')
     else:
         form = UserCreationForm()
-    return render(request, 'registration.html', {'form': form, 'us': us})
+    return render(request, 'registration.html', {'form': form})

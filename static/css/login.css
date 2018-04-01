@@ -1,8 +1,53 @@
 body {
-    background-color: #f5c6cb;
+    background-color: #fafafa;
+}
+
+.line-break {
+    padding-top: 5vh;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+@media (max-width: 576px) {
+    .landpage-image {
+        opacity: 0;
+    }
+    .login-container {
+        margin-right: 20vw !important;
+    }
+}
+
+
+.landpage-image {
+    width: 100%;
+    z-index: -5;
+    position: absolute;
 }
 
 .login-container {
-    padding-top: 20vh;
-    padding-left: 15vw;
+    z-index: 5;
+    margin-right: 55vw;
+    padding-top: 10vh;
+    padding-left: 5vw;
+}
+
+.btn-registration {
+    background-color: #3BAFDA;
+    color: #FFFFFF;
+}
+.btn-registration:hover {
+    background-color: #4FC1E9;
+}
+
+.btn-demo {
+    color: #3BAFDA;
+    border: 1px solid #3BAFDA;
+    background-color: transparent;
+}
+.btn-demo:hover {
+    color: #FFFFFF;
+    background-color: #4FC1E9;
 }
