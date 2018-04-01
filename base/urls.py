@@ -4,5 +4,6 @@ from base import views
 
 
 urlpatterns = [
-    path('', views.login),
+    path('', views.landpage, name='landpage'),
+    path('registration/', views.registration, name='registration')
 ]
